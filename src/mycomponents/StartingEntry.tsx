@@ -2,6 +2,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Collection from './Collection';
 
+
 const Stack = createNativeStackNavigator();
 
 export default function StartingEntry() {
@@ -10,7 +11,7 @@ export default function StartingEntry() {
       <Stack.Screen 
         name="Collection" 
         component={Collection} 
-        options={{ headerShown: true }} 
+        options={{ headerShown: false }} 
       />
     </Stack.Navigator>
   );

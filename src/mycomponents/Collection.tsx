@@ -3,6 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import ServicesPage from './ServicesPage';
 import AboutUsPage from './AboutUsPage';
 import HomePage from './HomePage';
+import SolutionsPage from './SolutionsPage';
 
 const Drawer = createDrawerNavigator();
 
@@ -12,6 +13,7 @@ export default function Collection() {
       <Drawer.Screen 
         name="HomePage" 
         component={HomePage} 
+        // component={SolutionsPage} 
         options={{ title: 'Home Page' }} 
       />
       <Drawer.Screen 
