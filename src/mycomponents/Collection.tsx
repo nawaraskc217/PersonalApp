@@ -3,7 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import ServicesPage from './ServicesPage';
 import AboutUsPage from './AboutUsPage';
 import HomePage from './HomePage';
-import SolutionsPage from './SolutionsPage';
+
 
 const Drawer = createDrawerNavigator();
 
