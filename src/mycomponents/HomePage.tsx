@@ -3,36 +3,36 @@ import React from 'react'
 import { ScrollView } from 'react-native-gesture-handler'
 import { Button, Image, TouchableOpacity } from 'react-native';
 
-export default function HomePage({navigation}) {
+export default function HomePage({ navigation }) {
   return (
     <ScrollView>
       <View style={styles.container}>
-      {/* Image Section */}
-      <Image
-        source={{ uri: 'https://example.com/inspirational-image.jpg' }}  // Replace with your own image URL
-        style={styles.image}
-      />
+        {/* Image Section */}
+        <Image
+          source={{ uri: 'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=' }}  // Replace with your own image URL
+          style={styles.image}
+        />
 
-      {/* Heading Section */}
-      <Text style={styles.heading}>Welcome to Motivation Hub!</Text>
-      <Text style={styles.subHeading}>Get Inspired, Get Moving!</Text>
+        {/* Heading Section */}
+        <Text style={styles.heading}>Inspire your futureself!</Text>
+        <Text style={styles.subHeading}>Get Inspired, Get Moving!</Text>
 
-      {/* Motivational Quote */}
-      <Text style={styles.quote}>
-        "The best way to predict the future is to create it." - Abraham Lincoln
-      </Text>
+        {/* Motivational Quote */}
+        <Text style={styles.quote}>
+          "The best way to predict the future is to create it." - Abraham Lincoln
+        </Text>
 
-      {/* Buttons to Navigate */}
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Services')}>
-          <Text style={styles.buttonText}>Discover Solutions</Text>
-        </TouchableOpacity>
+        {/* Buttons to Navigate */}
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('ServicesPage')}>
+            <Text style={styles.buttonText}>Discover Solutions</Text>
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('AboutUs')}>
-          <Text style={styles.buttonText}>About Us</Text>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('AboutUsPage')}>
+            <Text style={styles.buttonText}>Know More About Us?</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
 
     </ScrollView>
   )
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     borderRadius: 10,
     marginBottom: 15,
-    width: '80%',
+    width: '100%',
     alignItems: 'center',
   },
   buttonText: {
