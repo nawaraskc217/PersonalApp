@@ -4,6 +4,7 @@ import Collection from './Collection';
 
 import Productivity from './Productivity';
 import CareerPage from './CareerPage';
+import CareerDetails from '../Career/CareerDetails';
 
 
 const Stack = createNativeStackNavigator();
@@ -18,6 +19,8 @@ export default function StartingEntry() {
       />
       <Stack.Screen name="CareerPage" component={CareerPage} />
       <Stack.Screen name="Productivity" component={Productivity} />
+
+      <Stack.Screen name="CareerDetails" component={CareerDetails} />
 
     </Stack.Navigator >
   );

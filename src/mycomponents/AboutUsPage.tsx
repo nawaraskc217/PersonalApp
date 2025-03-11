@@ -28,22 +28,42 @@ const AboutUsPage = () => {
             I am a passionate developer with a background in Cyber Security, Java, Python, and React JS. Currently, I am working on projects related to mobile app development and web applications. I enjoy solving problems through coding, and I'm always looking for ways to learn and grow. In my free time, I like to explore music, travel, and dive into scientific concepts like quantum physics and astronomy.
           </Text>
         </View>
+
+
+
+        <View style={{ marginBottom: 24, alignItems: 'center' }}>
+          {/* Profile Picture */}
+          {/* <Image
+            source={{ uri: 'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=' }} // Replace with your image URL or local asset
+            style={{ width: 120, height: 120, borderRadius: 60, marginBottom: 16 }}
+          /> */}
+          <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Why I build this Mobile app???</Text>
+          <Text style={{ fontSize: 14, color: '#6B7280' }}>
+          To inspire the people becasuer we haev access of internert and we can get information with a click. A queston, Do you think we can trust all the information ?
+          </Text>
+        </View>
+
+
+
+        {/* Footer */}
+        <View style={{ padding: 16, backgroundColor: '#F3F4F6', marginTop: 'auto', borderTopWidth: 1, borderTopColor: '#E5E7EB' }}>
+          <Text style={{ textAlign: 'center', fontSize: 14, color: '#6B7280' }}>
+            © 2025 Nawaras KC | All Rights Reserved
+          </Text>
+          <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 8 }}>
+            <TouchableOpacity style={{ marginRight: 16 }}>
+              <Text style={{ color: '#3B82F6' }}>LinkedIn</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text style={{ color: '#3B82F6' }}>GitHub</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       </ScrollView>
 
-      {/* Footer */}
-      <View style={{ padding: 16, backgroundColor: '#F3F4F6', marginTop: 'auto', borderTopWidth: 1, borderTopColor: '#E5E7EB' }}>
-        <Text style={{ textAlign: 'center', fontSize: 14, color: '#6B7280' }}>
-          © 2025 Nawaras KC | All Rights Reserved
-        </Text>
-        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 8 }}>
-          <TouchableOpacity style={{ marginRight: 16 }}>
-            <Text style={{ color: '#3B82F6' }}>LinkedIn</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={{ color: '#3B82F6' }}>GitHub</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+
+
+
     </View>
   );
 };

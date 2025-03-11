@@ -2,7 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
 import { solutions } from './solutions'; // Ensure this is correctly structured
 
-function ServicesPage({ navigation }) {
+
+interface MyProps {
+  navigation: any; // Replace `any` with the appropriate type if possible
+}
+
+
+function ServicesPage({ navigation }: MyProps) {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: 'white', paddingHorizontal: 16, paddingVertical: 24 }}>
       {/* Header */}
