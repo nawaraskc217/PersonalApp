@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
-const steps = [
+const ResumeData = [
   {
     id: '1',
     title: 'Step 1: Choose a Resume Format',

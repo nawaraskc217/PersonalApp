@@ -55,7 +55,7 @@ export default function CareerDetails() {
       <View style={styles.container}>
         {/* Header */}
         <View style={styles.header}>
-          <Text style={styles.headerText}>About Me</Text>
+          <Text style={styles.headerText}>About Me hai</Text>
         </View>
 
         <ScrollView 

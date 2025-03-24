@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
-import { solutions } from './solutions'; // Ensure this is correctly structured
+import { solutions } from './categories_Or_soulutions/solutions'; // Ensure this is correctly structured
 
 
 interface MyProps {
