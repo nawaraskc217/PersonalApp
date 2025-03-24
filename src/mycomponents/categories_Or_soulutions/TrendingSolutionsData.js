@@ -1,4 +1,7 @@
-export const solutions = [
+
+//ServicePage -> Trending solutions
+
+export const TrendingSolutions = [
   { id: 1, title: "How to stay productive while working remotely?", description: "Learn practical strategies to improve your workflow.", category: "Productivity" },
   { id: 2, title: "Best financial habits for young professionals", description: "Tips to manage your money effectively.", category: "Finance" },
   { id: 3, title: "Mental health tips for a balanced life", description: "Improve your well-being with these daily habits.", category: "Mental Health" },

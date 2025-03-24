@@ -3,7 +3,12 @@ import React from 'react'
 import { ScrollView } from 'react-native-gesture-handler'
 import { Button, Image, TouchableOpacity } from 'react-native';
 
-export default function HomePage({ navigation }) {
+interface MyProps {
+  navigation: any; // Replace `any` with the appropriate type if possible
+}
+
+///This is the first Page
+export default function HomePage({ navigation }:MyProps) {
   return (
     <ScrollView>
       <View style={styles.container}>

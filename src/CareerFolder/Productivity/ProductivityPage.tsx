@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Productivity() {
+export default function ProductivityPage() {
   return (
     <View>
       <Text>Productivity</Text>

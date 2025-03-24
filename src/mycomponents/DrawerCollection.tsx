@@ -1,16 +1,22 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import ServicesPage from './ServicesPage';
-import AboutUsPage from './AboutUsPage';
-import HomePage from './HomePage';
+import ServicesPage from './Pages/ServicesPage';
+import HomePage from './Pages/HomePage';
+import AboutUsPage from './Pages/AboutUsPage';
+
 
 
 const Drawer = createDrawerNavigator();
 
-export default function Collection() {
+
+// These are the Drawer navigation in the main page
+export default function DrawerCollection() {
   return (
     <Drawer.Navigator>
+
       <Drawer.Screen
+
+      //First Page
         name="HomePage"
         component={HomePage}
         options={{ title: 'Home Page' }}

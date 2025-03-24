@@ -2,13 +2,18 @@ import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
 import React from 'react';
 
 const careerOptions = [
-  { id: '1', title: 'How to Choose a Career?', screen: 'CareerDetails' },
-  { id: '2', title: 'Resume Building Guide', screen: 'ResumeDetails' },
-  { id: '3', title: 'Interview Preparation', screen: 'InterviewDetails' },
-  { id: '4', title: 'Job Search Strategies', screen: 'JobSearchDetails' },
+  { id: '1', title: 'How to Choose a Career?', screen: 'CareerPage' },
+  { id: '2', title: 'Resume Building Guide', screen: 'ResumePage' },
+  { id: '3', title: 'Interview Preparation', screen: 'InterviewPage' },
+  { id: '4', title: 'Job Search Strategies', screen: 'JobSearchPage' },
 ];
 
-export default function CareerPage({ navigation }) {
+interface MyProps {
+  navigation: any; // Replace `any` with the appropriate type if possible
+}
+
+//Careerpagecollection- > Career Guide
+export default function CareerPageCollection({ navigation }:MyProps) {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Career Guide</Text>

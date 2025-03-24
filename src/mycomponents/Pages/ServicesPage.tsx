@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
-import { solutions } from './categories_Or_soulutions/solutions'; // Ensure this is correctly structured
+import { TrendingSolutions } from '../categories_Or_soulutions/TrendingSolutionsData';
+
 
 
 interface MyProps {
@@ -27,7 +28,9 @@ function ServicesPage({ navigation }: MyProps) {
       {/* Categories */}
       <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Categories</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginBottom: 16 }}>
-        <TouchableOpacity onPress={() => navigation.navigate('CareerPage')} style={styles.categoryButton}>
+
+
+        <TouchableOpacity onPress={() => navigation.navigate('CareerPageCollection')} style={styles.categoryButton}>
           <Text style={styles.categoryText}>Career</Text>
         </TouchableOpacity>
 
@@ -50,7 +53,7 @@ function ServicesPage({ navigation }: MyProps) {
 
       {/* Trending Solutions */}
       <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Trending Solutions</Text>
-      {solutions.map((item) => (
+      {TrendingSolutions.map((item) => (
         <View key={item.id} style={styles.solutionContainer}>
           <Text style={{ fontSize: 16, fontWeight: '600' }}>{item.title}</Text>
           <Text style={{ fontSize: 14, color: '#6B7280', marginTop: 4 }}>{item.description}</Text>
