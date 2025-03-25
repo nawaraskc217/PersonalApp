@@ -26,7 +26,7 @@ export const CareerDatas = [
     }
 ];
 
-export const bulletPoints = [
+export const thingstoKnow = [
     {
       id: '1',
       text: '• Make a list of your skills, interests, and passions to figure out how you want to spend your time. Also, consider what you want to be known for after you retire.'

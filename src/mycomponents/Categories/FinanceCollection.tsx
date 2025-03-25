@@ -2,10 +2,10 @@ import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
 import React from 'react';
 
 const Options = [
-  { id: '1', title: 'How to Choose a Career?', screen: 'CareerPage' },
-  { id: '2', title: 'Resume Building Guide', screen: 'ResumePage' },
-  { id: '3', title: 'Interview Preparation', screen: 'InterviewPage' },
-  { id: '4', title: 'Job Search Strategies', screen: 'JobSearchPage' },
+  { id: '1', title: 'FinancePage1', screen: 'FinancePage1' },
+  { id: '2', title: 'Resume Building Guide', screen: 'FinancePage2' },
+  { id: '3', title: 'Interview Preparation', screen: 'FinancePage3' },
+  { id: '4', title: 'Job Search Strategies', screen: 'FinancePage4' },
 ];
 
 interface MyProps {
@@ -16,7 +16,7 @@ interface MyProps {
 export default function FinanceCollection({ navigation }:MyProps) {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Career Guide</Text>
+      <Text style={styles.header}>Finance Guide</Text>
 
       <FlatList
         data={Options}

@@ -16,7 +16,7 @@ interface MyProps {
 export default function MusicCollection({ navigation }:MyProps) {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Career Guide</Text>
+      <Text style={styles.header}>Music Guide</Text>
 
       <FlatList
         data={Options}

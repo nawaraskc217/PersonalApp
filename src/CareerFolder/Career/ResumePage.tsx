@@ -3,29 +3,22 @@ import React from 'react';
 import { ResumeDatas, thingsYouShouldKnow } from './ResumeData';
 
 
-
-
-export default function ResumeDetails() {
+export default function ResumePage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
         {/* Header */}
-        <View style={styles.header}>
-          <Text style={styles.headerText}>About Me</Text>
-        </View>
 
-        <ScrollView 
-          showsVerticalScrollIndicator={false} 
+
+        <ScrollView
+          showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 20 }} // Fixes bottom gap
         >
           {/* About Me Section */}
           <View style={styles.aboutContainer}>
-            <Image
-              source={{ uri: 'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=' }}
-              style={styles.profileImage}
-            />
-            <Text style={styles.title}>How to Choose a Career Path?</Text>
-            <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
+            <Image source={require('./resume.jpg')} style={styles.profileImage} />
+            <Text style={styles.title}>How to Build the Resume?</Text>
+            <Text style={styles.authors}>Ref. Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
               {thingsYouShouldKnow.map((item) => (
@@ -96,7 +89,7 @@ const styles = StyleSheet.create({
   bulletContainer: {
     alignSelf: 'flex-start',
     marginBottom: 12,
-    backgroundColor: '#c3dbca',
+    backgroundColor: '#b86314',
     padding: 8,
     borderRadius: 8,
   },

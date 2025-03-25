@@ -16,7 +16,7 @@ interface MyProps {
 export default function MentalHealthCollection({ navigation }:MyProps) {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Career Guide</Text>
+      <Text style={styles.header}>Mental Health Guide</Text>
 
       <FlatList
         data={Options}

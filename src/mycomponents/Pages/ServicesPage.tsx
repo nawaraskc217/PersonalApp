@@ -21,7 +21,10 @@ function ServicesPage({ navigation }: MyProps) {
       <View style={styles.featuredContainer}>
         <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}>Today's Motivation</Text>
         <Text style={{ color: 'white', marginTop: 8, fontStyle: 'italic' }}>
-          “Success is not final; failure is not fatal: It is the courage to continue that counts.”
+        "Stay hungry, stay foolish," "Your time is limited, don't waste it living someone else's life," and "Innovation distinguishes between a leader and a follower."
+        </Text>
+        <Text style={{ color: 'white', marginTop:2, fontStyle: 'italic' }}>
+        -Steve Jobs
         </Text>
       </View>
 
@@ -70,7 +73,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginRight: 12,
     borderRadius: 30,
-    backgroundColor: '#3B82F6',
+    backgroundColor: '#00b8ae',
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 3,
@@ -99,7 +102,7 @@ const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 16,
     borderRadius: 12,
-    backgroundColor: '#3B82F6',
+    backgroundColor: '#00b8ae',
     shadowColor: '#000',
     shadowOpacity: 0.1,
     shadowRadius: 4,
