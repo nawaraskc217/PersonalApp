@@ -34,19 +34,20 @@ function ServicesPage({ navigation }: MyProps) {
           <Text style={styles.categoryText}>Career</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('Productivity')} style={styles.categoryButton}>
+        <TouchableOpacity onPress={() => navigation.navigate('ProductivityCollection')} style={styles.categoryButton}>
           <Text style={styles.categoryText}>Productivity</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('Finance')} style={styles.categoryButton}>
+
+        <TouchableOpacity onPress={() => navigation.navigate('FinanceCollection')} style={styles.categoryButton}>
           <Text style={styles.categoryText}>Finance</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('MentalHealth')} style={styles.categoryButton}>
+        <TouchableOpacity onPress={() => navigation.navigate('MentalHealthCollection')} style={styles.categoryButton}>
           <Text style={styles.categoryText}>Mental Health</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('Music')} style={styles.categoryButton}>
+        <TouchableOpacity onPress={() => navigation.navigate('MusicCollection')} style={styles.categoryButton}>
           <Text style={styles.categoryText}>Music</Text>
         </TouchableOpacity>
       </ScrollView>

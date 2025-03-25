@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
 import React from 'react';
 
-const careerOptions = [
+const Options = [
   { id: '1', title: 'How to Choose a Career?', screen: 'CareerPage' },
   { id: '2', title: 'Resume Building Guide', screen: 'ResumePage' },
   { id: '3', title: 'Interview Preparation', screen: 'InterviewPage' },
@@ -19,7 +19,7 @@ export default function CareerPageCollection({ navigation }:MyProps) {
       <Text style={styles.header}>Career Guide</Text>
 
       <FlatList
-        data={careerOptions}
+        data={Options}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <Pressable

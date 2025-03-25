@@ -1,12 +1,12 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Collection from './DrawerCollection';
 
-import CareerPageCollection from './CareerPageCollection';
 import CareerPage from '../CareerFolder/Career/CareerPage';
 import ResumePage from "../CareerFolder/Career/ResumePage"
 import ProductivityPage from '../CareerFolder/Productivity/ProductivityPage';
 import DrawerCollection from './DrawerCollection';
+import FinanceCollection from './Categories/FinanceCollection';
+import CareerPageCollection from './Categories/CareerPageCollection';
 
 
 
@@ -25,10 +25,11 @@ export default function StartingEntry() {
 
       <Stack.Screen name="CareerPageCollection" component={CareerPageCollection} />
 
+      <Stack.Screen name="FinanceCollection" component={FinanceCollection} />
+
 
       {/* StartingEntry-> DrawerCollection-> HomePage OR ->ServicesPage->  CareerPageCollection->CareerPage */}
       <Stack.Screen name="CareerPage" component={CareerPage} />
-
 
       <Stack.Screen name="ResumePage" component={ResumePage} />
       <Stack.Screen name="ProductivityPage" component={ProductivityPage} />
