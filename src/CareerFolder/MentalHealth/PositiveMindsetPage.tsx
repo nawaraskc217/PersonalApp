@@ -1,52 +1,52 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
 
-export const BudgetingDatas = [
+export const PositiveMindsetDatas = [
     {
         id: '1',
-        title: 'Step 1: Track Your Income and Expenses',
-        text: 'Start by recording all sources of income and tracking your expenses. Use budgeting apps or spreadsheets to categorize your spending habits.'
+        title: 'Step 1: Recognize Negative Thoughts',
+        text: 'Pay attention to negative or self-critical thoughts. Identifying them is the first step toward overcoming them.'
     },
     {
         id: '2',
-        title: 'Step 2: Set a Monthly Budget',
-        text: 'Allocate your income into essential categories like housing, food, savings, and entertainment. Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings.'
+        title: 'Step 2: Challenge Negative Beliefs',
+        text: 'Ask yourself if the negative thought is true or helpful. Often, these thoughts are based on assumptions rather than facts.'
     },
     {
         id: '3',
-        title: 'Step 3: Cut Unnecessary Expenses',
-        text: 'Identify areas where you can save money, such as eating out less, canceling unused subscriptions, or switching to cost-effective alternatives.'
+        title: 'Step 3: Replace Negative Thoughts with Positive Affirmations',
+        text: 'Counter negative thoughts by replacing them with positive affirmations. Focus on your strengths and achievements.'
     },
     {
         id: '4',
-        title: 'Step 4: Automate Savings and Bill Payments',
-        text: 'Set up automatic transfers to your savings and automatic bill payments to avoid late fees and build financial discipline.'
+        title: 'Step 4: Practice Self-Compassion',
+        text: 'Treat yourself with kindness when you experience setbacks. Speak to yourself as you would to a close friend.'
     },
     {
         id: '5',
-        title: 'Step 5: Review and Adjust Your Budget Regularly',
-        text: 'Check your budget monthly to see if you’re on track. Make adjustments based on lifestyle changes or new financial goals.'
+        title: 'Step 5: Surround Yourself with Positivity',
+        text: 'Be mindful of your environment and the people you spend time with. Surround yourself with positive influences that uplift you.'
     }
 ];
 
-export const BudgetingTips = [
+export const PositiveMindsetTips = [
     {
         id: '1',
-        text: '• Use cash envelopes or separate accounts to manage spending in different categories.'
+        text: '• Practice reframing negative situations in a more positive light to improve your mindset.'
     },
     {
         id: '2',
-        text: '• Review subscriptions and cancel those you no longer use to save extra money.'
+        text: '• Spend time with positive and supportive people who encourage your growth.'
     },
     {
         id: '3',
-        text: '• Set aside emergency funds before allocating money for non-essential expenses.'
+        text: '• Engage in activities that make you feel good about yourself and remind you of your worth.'
     }
 ];
 
 
 
-export default function BudgetingPage() {
+export default function PositiveMindsetPage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -65,14 +65,14 @@ export default function BudgetingPage() {
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {BudgetingTips.map((item) => (
+              {PositiveMindsetTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
       
-          {BudgetingDatas.map((item) => (
+          {PositiveMindsetDatas.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>

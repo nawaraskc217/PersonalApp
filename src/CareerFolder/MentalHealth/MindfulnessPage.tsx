@@ -1,52 +1,52 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
 
-export const BudgetingDatas = [
+export const MindfulnessDatas = [
     {
         id: '1',
-        title: 'Step 1: Track Your Income and Expenses',
-        text: 'Start by recording all sources of income and tracking your expenses. Use budgeting apps or spreadsheets to categorize your spending habits.'
+        title: 'Step 1: Focus on the Present Moment',
+        text: 'Mindfulness involves bringing your awareness to the present moment without judgment. Focus on your breathing or your surroundings.'
     },
     {
         id: '2',
-        title: 'Step 2: Set a Monthly Budget',
-        text: 'Allocate your income into essential categories like housing, food, savings, and entertainment. Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings.'
+        title: 'Step 2: Start with Short Sessions',
+        text: 'Start with just 5–10 minutes of mindfulness or meditation each day. Gradually increase the time as you become more comfortable.'
     },
     {
         id: '3',
-        title: 'Step 3: Cut Unnecessary Expenses',
-        text: 'Identify areas where you can save money, such as eating out less, canceling unused subscriptions, or switching to cost-effective alternatives.'
+        title: 'Step 3: Use Guided Meditation',
+        text: 'There are many apps and online resources with guided meditations. These can help you stay focused and learn new techniques.'
     },
     {
         id: '4',
-        title: 'Step 4: Automate Savings and Bill Payments',
-        text: 'Set up automatic transfers to your savings and automatic bill payments to avoid late fees and build financial discipline.'
+        title: 'Step 4: Practice Gratitude Daily',
+        text: 'Incorporate a gratitude practice into your mindfulness routine by writing down three things you’re thankful for every day.'
     },
     {
         id: '5',
-        title: 'Step 5: Review and Adjust Your Budget Regularly',
-        text: 'Check your budget monthly to see if you’re on track. Make adjustments based on lifestyle changes or new financial goals.'
+        title: 'Step 5: Make It a Habit',
+        text: 'Make mindfulness and meditation a regular part of your daily routine to experience long-term benefits for your mental health.'
     }
 ];
 
-export const BudgetingTips = [
+export const MindfulnessTips = [
     {
         id: '1',
-        text: '• Use cash envelopes or separate accounts to manage spending in different categories.'
+        text: '• Practice mindfulness during everyday activities, like eating or walking, to stay grounded and present.'
     },
     {
         id: '2',
-        text: '• Review subscriptions and cancel those you no longer use to save extra money.'
+        text: '• Use meditation apps like Headspace or Calm to guide your practice and stay consistent.'
     },
     {
         id: '3',
-        text: '• Set aside emergency funds before allocating money for non-essential expenses.'
+        text: '• Don’t stress about “perfect” meditation—just focus on being present, even if your mind wanders.'
     }
 ];
 
 
 
-export default function BudgetingPage() {
+export default function MindfulnessPage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -65,14 +65,14 @@ export default function BudgetingPage() {
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {BudgetingTips.map((item) => (
+              {MindfulnessTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
       
-          {BudgetingDatas.map((item) => (
+          {MindfulnessDatas.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>

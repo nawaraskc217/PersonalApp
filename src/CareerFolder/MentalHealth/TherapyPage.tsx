@@ -1,52 +1,51 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
 
-export const BudgetingDatas = [
+export const TherapyDatas = [
     {
         id: '1',
-        title: 'Step 1: Track Your Income and Expenses',
-        text: 'Start by recording all sources of income and tracking your expenses. Use budgeting apps or spreadsheets to categorize your spending habits.'
+        title: 'Step 1: Understand the Importance of Therapy',
+        text: 'Therapy can help you understand your emotions, improve coping strategies, and gain insights into mental health challenges.'
     },
     {
         id: '2',
-        title: 'Step 2: Set a Monthly Budget',
-        text: 'Allocate your income into essential categories like housing, food, savings, and entertainment. Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings.'
+        title: 'Step 2: Identify the Type of Therapy You Need',
+        text: 'There are many types of therapy, such as cognitive-behavioral therapy (CBT), talk therapy, and group therapy. Choose one that fits your needs.'
     },
     {
         id: '3',
-        title: 'Step 3: Cut Unnecessary Expenses',
-        text: 'Identify areas where you can save money, such as eating out less, canceling unused subscriptions, or switching to cost-effective alternatives.'
+        title: 'Step 3: Find a Qualified Therapist',
+        text: 'Search for licensed therapists through online platforms or ask for recommendations from trusted friends or healthcare providers.'
     },
     {
         id: '4',
-        title: 'Step 4: Automate Savings and Bill Payments',
-        text: 'Set up automatic transfers to your savings and automatic bill payments to avoid late fees and build financial discipline.'
+        title: 'Step 4: Be Open and Honest During Sessions',
+        text: 'Therapy works best when you are open about your feelings and experiences. Share openly to make progress toward your mental health goals.'
     },
     {
         id: '5',
-        title: 'Step 5: Review and Adjust Your Budget Regularly',
-        text: 'Check your budget monthly to see if you’re on track. Make adjustments based on lifestyle changes or new financial goals.'
+        title: 'Step 5: Follow Through with the Recommended Plan',
+        text: 'Therapists may suggest exercises or homework to help you improve your mental well-being. Stay committed to the plan and practice regularly.'
     }
 ];
 
-export const BudgetingTips = [
+export const TherapyTips = [
     {
         id: '1',
-        text: '• Use cash envelopes or separate accounts to manage spending in different categories.'
+        text: '• Don’t hesitate to seek help—mental health is just as important as physical health.'
     },
     {
         id: '2',
-        text: '• Review subscriptions and cancel those you no longer use to save extra money.'
+        text: '• Be patient with yourself as you work through your challenges with professional guidance.'
     },
     {
         id: '3',
-        text: '• Set aside emergency funds before allocating money for non-essential expenses.'
+        text: '• Follow up with your therapist if you have concerns or feel the need to adjust your treatment plan.'
     }
 ];
 
 
-
-export default function BudgetingPage() {
+export default function TherapyPage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -65,14 +64,14 @@ export default function BudgetingPage() {
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {BudgetingTips.map((item) => (
+              {TherapyTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
       
-          {BudgetingDatas.map((item) => (
+          {TherapyDatas.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>

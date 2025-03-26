@@ -1,52 +1,52 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
 
-export const BudgetingDatas = [
+export const StressManagementDatas = [
     {
         id: '1',
-        title: 'Step 1: Track Your Income and Expenses',
-        text: 'Start by recording all sources of income and tracking your expenses. Use budgeting apps or spreadsheets to categorize your spending habits.'
+        title: 'Step 1: Identify the Sources of Stress',
+        text: 'Start by recognizing what causes your stress and anxiety. Keep a journal or use apps to track your triggers and how they affect you.'
     },
     {
         id: '2',
-        title: 'Step 2: Set a Monthly Budget',
-        text: 'Allocate your income into essential categories like housing, food, savings, and entertainment. Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings.'
+        title: 'Step 2: Practice Deep Breathing Exercises',
+        text: 'When you feel anxious, focus on deep, slow breaths. Try techniques like the 4-7-8 method to calm your nervous system.'
     },
     {
         id: '3',
-        title: 'Step 3: Cut Unnecessary Expenses',
-        text: 'Identify areas where you can save money, such as eating out less, canceling unused subscriptions, or switching to cost-effective alternatives.'
+        title: 'Step 3: Regular Exercise and Physical Activity',
+        text: 'Exercise is a natural stress reliever. Engage in activities like walking, running, or yoga to release endorphins and reduce stress.'
     },
     {
         id: '4',
-        title: 'Step 4: Automate Savings and Bill Payments',
-        text: 'Set up automatic transfers to your savings and automatic bill payments to avoid late fees and build financial discipline.'
+        title: 'Step 4: Time Management and Prioritization',
+        text: 'Create a schedule and break tasks into smaller, manageable steps. Prioritize what matters most to reduce overwhelm.'
     },
     {
         id: '5',
-        title: 'Step 5: Review and Adjust Your Budget Regularly',
-        text: 'Check your budget monthly to see if you’re on track. Make adjustments based on lifestyle changes or new financial goals.'
+        title: 'Step 5: Seek Support from Loved Ones or Professionals',
+        text: 'Talk to friends, family, or a counselor when you feel overwhelmed. Social support is key to coping with stress effectively.'
     }
 ];
 
-export const BudgetingTips = [
+export const StressManagementTips = [
     {
         id: '1',
-        text: '• Use cash envelopes or separate accounts to manage spending in different categories.'
+        text: '• Practice mindfulness and take breaks throughout the day to recharge.'
     },
     {
         id: '2',
-        text: '• Review subscriptions and cancel those you no longer use to save extra money.'
+        text: '• Engage in hobbies or creative activities to distract your mind from stress.'
     },
     {
         id: '3',
-        text: '• Set aside emergency funds before allocating money for non-essential expenses.'
+        text: '• Consider journaling your thoughts and feelings to release emotional tension.'
     }
 ];
 
 
 
-export default function BudgetingPage() {
+export default function StressManagementPage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -65,14 +65,14 @@ export default function BudgetingPage() {
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {BudgetingTips.map((item) => (
+              {StressManagementTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
       
-          {BudgetingDatas.map((item) => (
+          {StressManagementDatas.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>

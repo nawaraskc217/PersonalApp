@@ -28,6 +28,16 @@ import FinancialIndependencePage from '../CareerFolder/Finance/FinancialIndepend
 import DebtManagementPage from '../CareerFolder/Finance/DebtManagementPage';
 import FocusPage from '../CareerFolder/Productivity/FocusPage';
 import BudgetingPage from '../CareerFolder/Finance/BudgetingPage';
+import StressManagementPage from '../CareerFolder/MentalHealth/StressManagementPage';
+import HealthyHabitsPage from '../CareerFolder/MentalHealth/HealthyHabitsPage';
+import MentalHealthDietPage from '../CareerFolder/MentalHealth/MentalHealthDietPage';
+import WorkplaceMentalHealthPage from '../CareerFolder/MentalHealth/WorkplaceMentalHealthPage';
+import SocialAnxietyPage from '../CareerFolder/MentalHealth/SocialAnxietyPage';
+import ResiliencePage from '../CareerFolder/MentalHealth/ResiliencePage';
+import SleepPage from '../CareerFolder/MentalHealth/SleepPage';
+import TherapyPage from '../CareerFolder/MentalHealth/TherapyPage';
+import PositiveMindsetPage from '../CareerFolder/MentalHealth/PositiveMindsetPage';
+import MindfulnessPage from '../CareerFolder/MentalHealth/MindfulnessPage';
 
 
 
@@ -86,8 +96,27 @@ export default function StartingEntry() {
       <Stack.Screen name="DebtManagementPage" component={DebtManagementPage} />
       <Stack.Screen name="CreditScorePage" component={CreditScorePage} />
       <Stack.Screen name="FinancialIndependencePage" component={FinancialIndependencePage} />
- 
 
+
+      {/* For mental health */}
+      <Stack.Screen name="StressManagementPage" component={StressManagementPage} />
+      <Stack.Screen name="HealthyHabitsPage" component={HealthyHabitsPage} />
+      <Stack.Screen name="MindfulnessPage" component={MindfulnessPage} />
+      <Stack.Screen name="PositiveMindsetPage" component={PositiveMindsetPage} />
+      <Stack.Screen name="TherapyPage" component={TherapyPage} />
+      <Stack.Screen name="SleepPage" component={SleepPage} />
+      <Stack.Screen name="ResiliencePage" component={ResiliencePage} />
+      <Stack.Screen name="SocialAnxietyPage" component={SocialAnxietyPage} />
+      <Stack.Screen name="WorkplaceMentalHealthPage" component={WorkplaceMentalHealthPage} />
+      <Stack.Screen name="MentalHealthDietPage" component={MentalHealthDietPage} />
+
+      {/* for music */}
+
+      {/* <Stack.Screen name="InstrumentPage" component={InstrumentPage} />
+      <Stack.Screen name="MusicTheoryPage" component={MusicTheoryPage} />
+      <Stack.Screen name="SongwritingPage" component={SongwritingPage} />
+      <Stack.Screen name="MusicProductionPage" component={MusicProductionPage} />
+      <Stack.Screen name="MusicGenresPage" component={MusicGenresPage} /> */}
 
 
     </Stack.Navigator >

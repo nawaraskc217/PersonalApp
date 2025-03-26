@@ -1,52 +1,52 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
 
-export const BudgetingDatas = [
+export const CreditScoreDatas = [
     {
         id: '1',
-        title: 'Step 1: Track Your Income and Expenses',
-        text: 'Start by recording all sources of income and tracking your expenses. Use budgeting apps or spreadsheets to categorize your spending habits.'
+        title: 'Step 1: Know How Your Credit Score is Calculated',
+        text: 'Credit scores are based on payment history, credit utilization, length of credit history, types of credit, and recent inquiries.'
     },
     {
         id: '2',
-        title: 'Step 2: Set a Monthly Budget',
-        text: 'Allocate your income into essential categories like housing, food, savings, and entertainment. Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings.'
+        title: 'Step 2: Pay Bills on Time',
+        text: 'Timely payments have the biggest impact on your credit score. Set reminders or automate bill payments to avoid missed due dates.'
     },
     {
         id: '3',
-        title: 'Step 3: Cut Unnecessary Expenses',
-        text: 'Identify areas where you can save money, such as eating out less, canceling unused subscriptions, or switching to cost-effective alternatives.'
+        title: 'Step 3: Keep Credit Utilization Low',
+        text: 'Aim to use less than 30% of your available credit limit to maintain a high score.'
     },
     {
         id: '4',
-        title: 'Step 4: Automate Savings and Bill Payments',
-        text: 'Set up automatic transfers to your savings and automatic bill payments to avoid late fees and build financial discipline.'
+        title: 'Step 4: Avoid Opening Too Many New Accounts',
+        text: 'Each credit inquiry slightly lowers your score. Only apply for new credit when necessary.'
     },
     {
         id: '5',
-        title: 'Step 5: Review and Adjust Your Budget Regularly',
-        text: 'Check your budget monthly to see if you’re on track. Make adjustments based on lifestyle changes or new financial goals.'
+        title: 'Step 5: Check Your Credit Report Regularly',
+        text: 'Monitor your credit report for errors or fraudulent activity. You’re entitled to a free credit report annually from major credit bureaus.'
     }
 ];
 
-export const BudgetingTips = [
+export const CreditScoreTips = [
     {
         id: '1',
-        text: '• Use cash envelopes or separate accounts to manage spending in different categories.'
+        text: '• Keep old credit accounts open to maintain a long credit history and improve your score.'
     },
     {
         id: '2',
-        text: '• Review subscriptions and cancel those you no longer use to save extra money.'
+        text: '• Dispute any incorrect information on your credit report to prevent it from affecting your score.'
     },
     {
         id: '3',
-        text: '• Set aside emergency funds before allocating money for non-essential expenses.'
+        text: '• Use a credit-builder loan or secured credit card if you have a low or no credit history.'
     }
 ];
 
 
 
-export default function BudgetingPage() {
+export default function SleepPage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -65,14 +65,14 @@ export default function BudgetingPage() {
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {BudgetingTips.map((item) => (
+              {CreditScoreTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
       
-          {BudgetingDatas.map((item) => (
+          {CreditScoreDatas.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>

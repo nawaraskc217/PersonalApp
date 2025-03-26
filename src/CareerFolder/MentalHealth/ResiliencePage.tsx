@@ -1,52 +1,52 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
 
-export const BudgetingDatas = [
+export const ResilienceDatas = [
     {
         id: '1',
-        title: 'Step 1: Track Your Income and Expenses',
-        text: 'Start by recording all sources of income and tracking your expenses. Use budgeting apps or spreadsheets to categorize your spending habits.'
+        title: 'Step 1: Embrace Challenges as Opportunities',
+        text: 'Resilience is about viewing challenges as opportunities for growth. When faced with adversity, see it as a chance to learn and become stronger.'
     },
     {
         id: '2',
-        title: 'Step 2: Set a Monthly Budget',
-        text: 'Allocate your income into essential categories like housing, food, savings, and entertainment. Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings.'
+        title: 'Step 2: Build a Strong Support System',
+        text: 'Having a reliable network of friends, family, or colleagues is essential for emotional resilience. Surround yourself with positive and supportive people.'
     },
     {
         id: '3',
-        title: 'Step 3: Cut Unnecessary Expenses',
-        text: 'Identify areas where you can save money, such as eating out less, canceling unused subscriptions, or switching to cost-effective alternatives.'
+        title: 'Step 3: Practice Self-Compassion',
+        text: 'Be kind to yourself during tough times. Instead of criticizing yourself, acknowledge your feelings and treat yourself with care.'
     },
     {
         id: '4',
-        title: 'Step 4: Automate Savings and Bill Payments',
-        text: 'Set up automatic transfers to your savings and automatic bill payments to avoid late fees and build financial discipline.'
+        title: 'Step 4: Focus on What You Can Control',
+        text: 'Resilience involves accepting what is outside your control and focusing on the things you can influence. This mindset helps reduce stress and build emotional strength.'
     },
     {
         id: '5',
-        title: 'Step 5: Review and Adjust Your Budget Regularly',
-        text: 'Check your budget monthly to see if you’re on track. Make adjustments based on lifestyle changes or new financial goals.'
+        title: 'Step 5: Develop Healthy Coping Mechanisms',
+        text: 'Use techniques like mindfulness, meditation, exercise, or journaling to manage your emotions and navigate difficult situations more effectively.'
     }
 ];
 
-export const BudgetingTips = [
+export const ResilienceTips = [
     {
         id: '1',
-        text: '• Use cash envelopes or separate accounts to manage spending in different categories.'
+        text: '• Learn from setbacks by reflecting on what went well and what can be improved next time.'
     },
     {
         id: '2',
-        text: '• Review subscriptions and cancel those you no longer use to save extra money.'
+        text: '• Stay optimistic and remind yourself that challenging times are temporary and will pass.'
     },
     {
         id: '3',
-        text: '• Set aside emergency funds before allocating money for non-essential expenses.'
+        text: '• Develop problem-solving skills to manage stress and improve your ability to bounce back from challenges.'
     }
 ];
 
 
 
-export default function BudgetingPage() {
+export default function ResiliencePage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -65,14 +65,14 @@ export default function BudgetingPage() {
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {BudgetingTips.map((item) => (
+              {ResilienceTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
       
-          {BudgetingDatas.map((item) => (
+          {ResilienceDatas.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>

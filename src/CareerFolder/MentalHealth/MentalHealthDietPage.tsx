@@ -1,52 +1,51 @@
 import { Image, StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import React from 'react';
 
-export const BudgetingDatas = [
+export const MentalHealthDietDatas = [
     {
         id: '1',
-        title: 'Step 1: Track Your Income and Expenses',
-        text: 'Start by recording all sources of income and tracking your expenses. Use budgeting apps or spreadsheets to categorize your spending habits.'
+        title: 'Step 1: Eat a Balanced Diet Rich in Nutrients',
+        text: 'Consume a variety of nutrient-rich foods like fruits, vegetables, whole grains, and lean proteins. These provide the necessary vitamins and minerals to support mental health.'
     },
     {
         id: '2',
-        title: 'Step 2: Set a Monthly Budget',
-        text: 'Allocate your income into essential categories like housing, food, savings, and entertainment. Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings.'
+        title: 'Step 2: Incorporate Omega-3 Fatty Acids',
+        text: 'Omega-3 fatty acids, found in foods like fish, walnuts, and flaxseeds, are essential for brain health and can help reduce symptoms of depression and anxiety.'
     },
     {
         id: '3',
-        title: 'Step 3: Cut Unnecessary Expenses',
-        text: 'Identify areas where you can save money, such as eating out less, canceling unused subscriptions, or switching to cost-effective alternatives.'
+        title: 'Step 3: Stay Hydrated',
+        text: 'Dehydration can negatively affect mood and cognitive function. Aim to drink plenty of water throughout the day to maintain hydration and mental clarity.'
     },
     {
         id: '4',
-        title: 'Step 4: Automate Savings and Bill Payments',
-        text: 'Set up automatic transfers to your savings and automatic bill payments to avoid late fees and build financial discipline.'
+        title: 'Step 4: Limit Caffeine and Sugar Intake',
+        text: 'Excessive caffeine and sugar can lead to energy crashes and mood swings. Opt for healthier alternatives to maintain stable energy levels and mental well-being.'
     },
     {
         id: '5',
-        title: 'Step 5: Review and Adjust Your Budget Regularly',
-        text: 'Check your budget monthly to see if you’re on track. Make adjustments based on lifestyle changes or new financial goals.'
+        title: 'Step 5: Consider Supplements If Necessary',
+        text: 'If your diet lacks certain nutrients, consider taking supplements like vitamin D or B-complex vitamins. Consult a healthcare professional before starting any supplement regimen.'
     }
 ];
 
-export const BudgetingTips = [
+export const MentalHealthDietTips = [
     {
         id: '1',
-        text: '• Use cash envelopes or separate accounts to manage spending in different categories.'
+        text: '• Choose whole foods over processed ones for better mental and physical health.'
     },
     {
         id: '2',
-        text: '• Review subscriptions and cancel those you no longer use to save extra money.'
+        text: '• Avoid overeating, as it can lead to sluggishness and a negative impact on mood.'
     },
     {
         id: '3',
-        text: '• Set aside emergency funds before allocating money for non-essential expenses.'
+        text: '• Focus on a balanced diet to maintain energy levels and mental clarity throughout the day.'
     }
 ];
 
 
-
-export default function BudgetingPage() {
+export default function MentalHealthDietPage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -65,14 +64,14 @@ export default function BudgetingPage() {
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {BudgetingTips.map((item) => (
+              {MentalHealthDietTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
       
-          {BudgetingDatas.map((item) => (
+          {MentalHealthDietDatas.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>
