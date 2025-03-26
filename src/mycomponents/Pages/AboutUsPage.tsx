@@ -20,7 +20,8 @@ const AboutUsPage = () => {
         <View style={{ marginBottom: 24, alignItems: 'center' }}>
           {/* Profile Picture */}
           <Image
-            source={{ uri: 'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=' }} // Replace with your image URL or local asset
+
+            source={require('../assets/nkc.png')}
             style={{ width: 120, height: 120, borderRadius: 60, marginBottom: 16 }}
           />
           <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Hello, I'm Nawaras KC</Text>
@@ -39,7 +40,7 @@ const AboutUsPage = () => {
           /> */}
           <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Why I build this Mobile app???</Text>
           <Text style={{ fontSize: 14, color: '#6B7280' }}>
-          To inspire the people becasuer we haev access of internert and we can get information with a click. A queston, Do you think we can trust all the information ?
+            To inspire the people becasuer we haev access of internert and we can get information with a click. A queston, Do you think we can trust all the information ?
           </Text>
         </View>
 

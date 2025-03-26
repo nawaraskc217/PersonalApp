@@ -21,10 +21,10 @@ function ServicesPage({ navigation }: MyProps) {
       <View style={styles.featuredContainer}>
         <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}>Today's Motivation</Text>
         <Text style={{ color: 'white', marginTop: 8, fontStyle: 'italic' }}>
-        "Stay hungry, stay foolish," "Your time is limited, don't waste it living someone else's life," and "Innovation distinguishes between a leader and a follower."
+          "Stay hungry, stay foolish," "Your time is limited, don't waste it living someone else's life," and "Innovation distinguishes between a leader and a follower."
         </Text>
-        <Text style={{ color: 'white', marginTop:2, fontStyle: 'italic' }}>
-        -Steve Jobs
+        <Text style={{ color: 'white', marginTop: 2, fontStyle: 'italic' }}>
+          -Steve Jobs
         </Text>
       </View>
 
@@ -53,6 +53,11 @@ function ServicesPage({ navigation }: MyProps) {
         <TouchableOpacity onPress={() => navigation.navigate('MusicCollection')} style={styles.categoryButton}>
           <Text style={styles.categoryText}>Music</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate('SelfLoveCareCollection')} style={styles.categoryButton}>
+          <Text style={styles.categoryText}>Self-Care/Self-Love</Text>
+        </TouchableOpacity>
+
       </ScrollView>
 
       {/* Trending Solutions */}
