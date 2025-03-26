@@ -38,6 +38,11 @@ import SleepPage from '../CareerFolder/MentalHealth/SleepPage';
 import TherapyPage from '../CareerFolder/MentalHealth/TherapyPage';
 import PositiveMindsetPage from '../CareerFolder/MentalHealth/PositiveMindsetPage';
 import MindfulnessPage from '../CareerFolder/MentalHealth/MindfulnessPage';
+import InstrumentPage from '../CareerFolder/Music/InstrumentPage';
+import MusicTheoryPage from '../CareerFolder/Music/MusicTheoryPage';
+import SongwritingPage from '../CareerFolder/Music/SongwritingPage';
+import MusicProductionPage from '../CareerFolder/Music/MusicProductionPage';
+import MusicGenresPage from '../CareerFolder/Music/MusicGenresPage';
 
 
 
@@ -111,12 +116,11 @@ export default function StartingEntry() {
       <Stack.Screen name="MentalHealthDietPage" component={MentalHealthDietPage} />
 
       {/* for music */}
-
-      {/* <Stack.Screen name="InstrumentPage" component={InstrumentPage} />
+      <Stack.Screen name="InstrumentPage" component={InstrumentPage} />
       <Stack.Screen name="MusicTheoryPage" component={MusicTheoryPage} />
       <Stack.Screen name="SongwritingPage" component={SongwritingPage} />
       <Stack.Screen name="MusicProductionPage" component={MusicProductionPage} />
-      <Stack.Screen name="MusicGenresPage" component={MusicGenresPage} /> */}
+      <Stack.Screen name="MusicGenresPage" component={MusicGenresPage} />
 
 
     </Stack.Navigator >
