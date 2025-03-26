@@ -43,7 +43,7 @@ export default function DrawerCollection() {
       <Drawer.Screen
         name="AboutUsPage"
         component={AboutUsPage}
-        options={{ title: 'About Us' }}
+        options={{ title: 'About me' }}
       />
 
 

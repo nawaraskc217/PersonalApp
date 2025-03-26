@@ -66,7 +66,7 @@ const BlogsPage = () => {
           </Text>
           <TouchableOpacity 
             style={styles.readMoreButton}
-            onPress={() => Linking.openURL('')}  // Replace with actual blog URL
+            onPress={() => Linking.openURL('https://dev.to/grapplingdev/mastering-cyber-security-e70')}  // Replace with actual blog URL
           >
             <Text style={styles.readMoreText}>Read More</Text>
           </TouchableOpacity>
@@ -75,13 +75,13 @@ const BlogsPage = () => {
 
            {/* Blog5 */}
            <View style={styles.blogContainer}>
-          <Text style={styles.blogTitle}>Mastering Cyber Security</Text>
+          <Text style={styles.blogTitle}>how to find the perfect college</Text>
           <Text style={styles.blogDescription}>
-          Finding the perfect college involves a combination of personal preferences, career goals, and practical considerations.
+          Start by self-reflecting on your academic interests, desired learning environment, and career goals, then research colleges that align with these preferences, considering factors like location, campus culture, and academic programs.
           </Text>
           <TouchableOpacity 
             style={styles.readMoreButton}
-            onPress={() => Linking.openURL('')}  // Replace with actual blog URL
+            onPress={() => Linking.openURL('https://bigfuture.collegeboard.org/plan-for-college/find-your-fit/college-search-step-by-step')}  // Replace with actual blog URL
           >
             <Text style={styles.readMoreText}>Read More</Text>
           </TouchableOpacity>
