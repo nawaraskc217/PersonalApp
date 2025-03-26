@@ -75,7 +75,7 @@ const BlogsPage = () => {
 
            {/* Blog5 */}
            <View style={styles.blogContainer}>
-          <Text style={styles.blogTitle}>how to find the perfect college</Text>
+          <Text style={styles.blogTitle}>How to find the perfect college</Text>
           <Text style={styles.blogDescription}>
           Start by self-reflecting on your academic interests, desired learning environment, and career goals, then research colleges that align with these preferences, considering factors like location, campus culture, and academic programs.
           </Text>
