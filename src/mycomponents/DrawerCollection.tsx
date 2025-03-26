@@ -19,13 +19,7 @@ export default function DrawerCollection() {
       activeBackgroundColor: 'green',  // Background color when active
     }}>
 
-      {/* <Drawer.Screen
-
-      //First Page
-        name="HomePage"
-        component={HomePage}
-        options={{ title: 'Home' }}
-      /> */}
+   
 
       <Drawer.Screen
         name="HomePage"

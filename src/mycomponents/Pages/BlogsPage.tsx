@@ -8,7 +8,7 @@ const BlogsPage = () => {
     <View style={{ flex: 1, backgroundColor: 'white', paddingHorizontal: 16, paddingVertical: 24 }}>
       {/* Header */}
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-        <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Blog / Articles</Text>
+        <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Enjoy the Blogs / Articles...</Text>
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   readMoreButton: {
-    backgroundColor: '#3B82F6',
+    backgroundColor: 'green',
     paddingVertical: 10,
     paddingHorizontal: 16,
     borderRadius: 8,

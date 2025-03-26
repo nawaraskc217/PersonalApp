@@ -48,6 +48,7 @@ import SelfCareTimePage from '../CareerFolder/selflovecare/SelfCareTimePage';
 import SelfCareRoutinePage from '../CareerFolder/selflovecare/SelfCareRoutinePage';
 import HealingPage from '../CareerFolder/selflovecare/HealingPage';
 import MindfulnessSelfPage from '../CareerFolder/selflovecare/MindfulnessSelfPage';
+import BlogsPage from './Pages/BlogsPage';
 
 
 
@@ -63,7 +64,7 @@ export default function StartingEntry() {
         component={DrawerCollection}
         options={{ headerShown: false }} />
 
-
+      <Stack.Screen name="BlogsPage" component={BlogsPage} />
       {/* //Categories of Solutions */}
       <Stack.Screen name="CareerPageCollection" component={CareerPageCollection} />
       <Stack.Screen name="ProductivityCollection" component={ProductivityCollection} />

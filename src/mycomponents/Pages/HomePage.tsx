@@ -36,6 +36,10 @@ export default function HomePage({ navigation }:MyProps) {
           <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('AboutUsPage')}>
             <Text style={styles.buttonText}>Know More About Us?</Text>
           </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('BlogsPage')}>
+            <Text style={styles.buttonText}>Read Blogs/Articles?</Text>
+          </TouchableOpacity>
         </View>
       </View>
 
