@@ -1,12 +1,14 @@
 import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
 import React from 'react';
 
-const Options = [
-  { id: '1', title: 'FinancePage1', screen: 'FinancePage1' },
-  { id: '2', title: 'Resume Building Guide', screen: 'FinancePage2' },
-  { id: '3', title: 'Interview Preparation', screen: 'FinancePage3' },
-  { id: '4', title: 'Job Search Strategies', screen: 'FinancePage4' },
+const FinanceTopics = [
+  { id: '1', title: 'Budgeting Basics', screen: 'BudgetingPage' },
+  { id: '2', title: 'Saving and Investing', screen: 'InvestingPage' },
+  { id: '3', title: 'Debt Management Strategies', screen: 'DebtManagementPage' },
+  { id: '4', title: 'Understanding Credit Scores', screen: 'CreditScorePage' },
+  { id: '5', title: 'Financial Independence Tips', screen: 'FinancialIndependencePage' },
 ];
+
 
 interface MyProps {
   navigation: any; // Replace `any` with the appropriate type if possible
@@ -19,7 +21,7 @@ export default function FinanceCollection({ navigation }:MyProps) {
       <Text style={styles.header}>Finance Guide</Text>
 
       <FlatList
-        data={Options}
+        data={FinanceTopics}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <Pressable

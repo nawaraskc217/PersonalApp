@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
 import React from 'react';
 
-const Options = [
-  { id: '1', title: 'How to Choose a Career?', screen: 'CareerPage' },
-  { id: '2', title: 'Resume Building Guide', screen: 'ResumePage' },
-  { id: '3', title: 'Interview Preparation', screen: 'InterviewPage' },
-  { id: '4', title: 'Job Search Strategies', screen: 'JobSearchPage' },
+const MusicTopics = [
+  { id: '1', title: 'Learning a New Instrument', screen: 'InstrumentPage' },
+  { id: '2', title: 'Music Theory Basics', screen: 'MusicTheoryPage' },
+  { id: '3', title: 'Songwriting Tips', screen: 'SongwritingPage' },
+  { id: '4', title: 'Recording & Production', screen: 'MusicProductionPage' },
+  { id: '5', title: 'Exploring Different Genres', screen: 'MusicGenresPage' },
 ];
 
 interface MyProps {
@@ -19,7 +20,7 @@ export default function MusicCollection({ navigation }:MyProps) {
       <Text style={styles.header}>Music Guide</Text>
 
       <FlatList
-        data={Options}
+        data={MusicTopics}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <Pressable

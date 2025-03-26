@@ -12,7 +12,7 @@ const Drawer = createDrawerNavigator();
 // These are the Drawer navigation in the main page
 export default function DrawerCollection() {
   return (
-    <Drawer.Navigator   screenOptions={{
+    <Drawer.Navigator screenOptions={{
       activeTintColor: 'pink',  // Text color when active
       inactiveTintColor: 'green',  // Text color when inactive
       activeBackgroundColor: 'green',  // Background color when active

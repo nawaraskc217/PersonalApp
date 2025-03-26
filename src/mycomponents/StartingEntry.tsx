@@ -4,8 +4,8 @@ import DrawerCollection from './DrawerCollection';
 
 import CareerPage from '../CareerFolder/Career/CareerPage';
 import ResumePage from "../CareerFolder/Career/ResumePage"
-import ProductivityPage from '../CareerFolder/Productivity/ProductivityPage';
-import FinancePage1 from '../CareerFolder/Finance/FinancePage1';
+
+import TimeManagementPage from '../CareerFolder/Productivity/TimeManagementPage';
 
 
 
@@ -16,6 +16,20 @@ import MentalHealthCollection from './Categories/MentalHealthCollection';
 import MusicCollection from './Categories/MusicCollection';
 import InterviewPage from '../CareerFolder/Career/InterviewPage';
 import JobSearchPage from '../CareerFolder/Career/JobSearchPage';
+import ProcrastinationPage from '../CareerFolder/Productivity/ProcrastinationPage';
+import GoalSettingPage from '../CareerFolder/Productivity/GoalSettingPage';
+import RoutinePage from '../CareerFolder/Productivity/RoutinePage';
+
+import WorkLifeBalancePage from '../CareerFolder/Productivity/WorkLifeBalancePage';
+
+import InvestingPage from '../CareerFolder/Finance/InvestingPage';
+import CreditScorePage from '../CareerFolder/Finance/CreditScorePage';
+import FinancialIndependencePage from '../CareerFolder/Finance/FinancialIndependencePage';
+import DebtManagementPage from '../CareerFolder/Finance/DebtManagementPage';
+import FocusPage from '../CareerFolder/Productivity/FocusPage';
+import BudgetingPage from '../CareerFolder/Finance/BudgetingPage';
+
+
 
 
 
@@ -58,11 +72,21 @@ export default function StartingEntry() {
 
 
       {/* This is for Productivity */}
-      <Stack.Screen name="ProductivityPage" component={ProductivityPage} />
+      <Stack.Screen name="TimeManagementPage" component={TimeManagementPage} />
+      <Stack.Screen name="ProcrastinationPage" component={ProcrastinationPage} />
+      <Stack.Screen name="GoalSettingPage" component={GoalSettingPage} />
+      <Stack.Screen name="RoutinePage" component={RoutinePage} />
+      <Stack.Screen name="FocusPage" component={FocusPage} />
+      <Stack.Screen name="WorkLifeBalancePage" component={WorkLifeBalancePage} />
 
 
       {/* This is for Finance */}
-      <Stack.Screen name="FinancePage1" component={FinancePage1} />
+      <Stack.Screen name="BudgetingPage" component={BudgetingPage} />
+      <Stack.Screen name="InvestingPage" component={InvestingPage} />
+      <Stack.Screen name="DebtManagementPage" component={DebtManagementPage} />
+      <Stack.Screen name="CreditScorePage" component={CreditScorePage} />
+      <Stack.Screen name="FinancialIndependencePage" component={FinancialIndependencePage} />
+ 
 
 
 

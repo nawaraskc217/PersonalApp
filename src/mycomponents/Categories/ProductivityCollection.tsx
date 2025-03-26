@@ -1,11 +1,13 @@
 import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
 import React from 'react';
 
-const Options = [
-  { id: '1', title: 'How to Choose a Career?', screen: 'CareerPage' },
-  { id: '2', title: 'Resume Building Guide', screen: 'ResumePage' },
-  { id: '3', title: 'Interview Preparation', screen: 'InterviewPage' },
-  { id: '4', title: 'Job Search Strategies', screen: 'JobSearchPage' },
+const ProductivityTips = [
+  { id: '1', title: 'Time Management Techniques', screen: 'TimeManagementPage' },
+  { id: '2', title: 'Avoiding Procrastination', screen: 'ProcrastinationPage' },
+  { id: '3', title: 'Effective Goal Setting', screen: 'GoalSettingPage' },
+  { id: '4', title: 'Building a Productive Routine', screen: 'RoutinePage' },
+  { id: '5', title: 'Maximizing Focus & Concentration', screen: 'FocusPage' },
+  { id: '6', title: 'Work-Life Balance Strategies', screen: 'WorkLifeBalancePage' },
 ];
 
 interface MyProps {
@@ -19,7 +21,7 @@ export default function ProductivityCollection({ navigation }:MyProps) {
       <Text style={styles.header}>Productiviy Guide</Text>
 
       <FlatList
-        data={Options}
+        data={ProductivityTips}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <Pressable

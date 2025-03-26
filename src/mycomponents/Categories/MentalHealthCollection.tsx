@@ -1,12 +1,19 @@
 import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
 import React from 'react';
 
-const Options = [
-  { id: '1', title: 'How to Choose a Career?', screen: 'CareerPage' },
-  { id: '2', title: 'Resume Building Guide', screen: 'ResumePage' },
-  { id: '3', title: 'Interview Preparation', screen: 'InterviewPage' },
-  { id: '4', title: 'Job Search Strategies', screen: 'JobSearchPage' },
+const MentalHealthTopics = [
+  { id: '1', title: 'Managing Stress & Anxiety', screen: 'StressManagementPage' },
+  { id: '2', title: 'Building Healthy Habits', screen: 'HealthyHabitsPage' },
+  { id: '3', title: 'Mindfulness & Meditation', screen: 'MindfulnessPage' },
+  { id: '4', title: 'Overcoming Negative Thoughts', screen: 'PositiveMindsetPage' },
+  { id: '5', title: 'Seeking Professional Help', screen: 'TherapyPage' },
+  { id: '6', title: 'Improving Sleep Quality', screen: 'SleepPage' },
+  { id: '7', title: 'Building Emotional Resilience', screen: 'ResiliencePage' },
+  { id: '8', title: 'Social Anxiety & Confidence', screen: 'SocialAnxietyPage' },
+  { id: '9', title: 'Workplace Mental Health', screen: 'WorkplaceMentalHealthPage' },
+  { id: '10', title: 'The Role of Diet in Mental Health', screen: 'MentalHealthDietPage' },
 ];
+
 
 interface MyProps {
   navigation: any; // Replace `any` with the appropriate type if possible
@@ -19,7 +26,7 @@ export default function MentalHealthCollection({ navigation }:MyProps) {
       <Text style={styles.header}>Mental Health Guide</Text>
 
       <FlatList
-        data={Options}
+        data={MentalHealthTopics}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <Pressable
