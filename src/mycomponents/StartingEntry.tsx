@@ -38,6 +38,16 @@ import SongwritingPage from '../CareerFolder/Music/SongwritingPage';
 import MusicProductionPage from '../CareerFolder/Music/MusicProductionPage';
 import MusicGenresPage from '../CareerFolder/Music/MusicGenresPage';
 import SelfLoveCareCollection from './Categories/SelfLoveCareCollection';
+import SelfCompassionPage from '../CareerFolder/selflovecare/SelfCompassionPage';
+import HealthyBoundariesPage from '../CareerFolder/selflovecare/HealthyBoundariesPage';
+import ConfidencePage from '../CareerFolder/selflovecare/ConfidencePage';
+import JournalingPage from '../CareerFolder/selflovecare/JournalingPage';
+import InnerPeacePage from '../CareerFolder/selflovecare/InnerPeacePage';
+import AffirmationsPage from '../CareerFolder/selflovecare/AffirmationsPage';
+import SelfCareTimePage from '../CareerFolder/selflovecare/SelfCareTimePage';
+import SelfCareRoutinePage from '../CareerFolder/selflovecare/SelfCareRoutinePage';
+import HealingPage from '../CareerFolder/selflovecare/HealingPage';
+import MindfulnessSelfPage from '../CareerFolder/selflovecare/MindfulnessSelfPage';
 
 
 
@@ -141,56 +151,26 @@ export default function StartingEntry() {
 
 
       {/* For self-love/care */}
-      {/* <Stack.Screen 
-  name="SelfCompassionPage" 
-  component={SelfCompassionPage} 
-  options={{ title: 'Practicing Self-Compassion' }} 
-/>
-<Stack.Screen 
-  name="HealthyBoundariesPage" 
-  component={HealthyBoundariesPage} 
-  options={{ title: 'Creating Healthy Boundaries' }} 
-/>
-<Stack.Screen 
-  name="MindfulnessPage" 
-  component={MindfulnessPage} 
-  options={{ title: 'Mindfulness for Self-Awareness' }} 
-/>
-<Stack.Screen 
-  name="ConfidencePage" 
-  component={ConfidencePage} 
-  options={{ title: 'Building Confidence & Self-Esteem' }} 
-/>
-<Stack.Screen 
-  name="JournalingPage" 
-  component={JournalingPage} 
-  options={{ title: 'Journaling for Emotional Clarity' }} 
-/>
-<Stack.Screen 
-  name="InnerPeacePage" 
-  component={InnerPeacePage} 
-  options={{ title: 'Nurturing Your Inner Peace' }} 
-/>
-<Stack.Screen 
-  name="AffirmationsPage" 
-  component={AffirmationsPage} 
-  options={{ title: 'Positive Affirmations & Gratitude' }} 
-/>
-<Stack.Screen 
-  name="SelfCareTimePage" 
-  component={SelfCareTimePage} 
-  options={{ title: 'Taking Time for Yourself' }} 
-/>
-<Stack.Screen 
-  name="SelfCareRoutinePage" 
-  component={SelfCareRoutinePage} 
-  options={{ title: 'Self-Care Routines for Well-being' }} 
-/>
-<Stack.Screen 
-  name="HealingPage" 
-  component={HealingPage} 
-  options={{ title: 'Healing from Negative Self-Talk' }} 
-/> */}
+      <Stack.Screen name="SelfCompassionPage" component={SelfCompassionPage} options={{ title: 'Practicing Self-Compassion' }}
+      />
+      <Stack.Screen name="HealthyBoundariesPage" component={HealthyBoundariesPage} options={{ title: 'Creating Healthy Boundaries' }}
+      />
+      <Stack.Screen name="MindfulnessSelfPage" component={MindfulnessSelfPage} options={{ title: 'Mindfulness for Self-Awareness' }}
+      />
+      <Stack.Screen name="ConfidencePage" component={ConfidencePage} options={{ title: 'Building Confidence & Self-Esteem' }}
+      />
+      <Stack.Screen name="JournalingPage" component={JournalingPage} options={{ title: 'Journaling for Emotional Clarity' }}
+      />
+      <Stack.Screen name="InnerPeacePage" component={InnerPeacePage} options={{ title: 'Nurturing Your Inner Peace' }}
+      />
+      <Stack.Screen name="AffirmationsPage" component={AffirmationsPage} options={{ title: 'Positive Affirmations & Gratitude' }}
+      />
+      <Stack.Screen name="SelfCareTimePage" component={SelfCareTimePage} options={{ title: 'Taking Time for Yourself' }}
+      />
+      <Stack.Screen name="SelfCareRoutinePage" component={SelfCareRoutinePage} options={{ title: 'Self-Care Routines for Well-being' }}
+      />
+      <Stack.Screen name="HealingPage" component={HealingPage} options={{ title: 'Healing from Negative Self-Talk' }}
+      />
 
 
     </Stack.Navigator >

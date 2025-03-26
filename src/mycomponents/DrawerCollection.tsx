@@ -3,6 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import ServicesPage from './Pages/ServicesPage';
 import HomePage from './Pages/HomePage';
 import AboutUsPage from './Pages/AboutUsPage';
+import BlogsPage from './Pages/BlogsPage';
 
 
 
@@ -43,6 +44,13 @@ export default function DrawerCollection() {
         name="AboutUsPage"
         component={AboutUsPage}
         options={{ title: 'About Us' }}
+      />
+
+
+      <Drawer.Screen
+        name="Blogs"
+        component={BlogsPage}
+        options={{ title: 'Blogs/Articles' }}
       />
     </Drawer.Navigator>
   );

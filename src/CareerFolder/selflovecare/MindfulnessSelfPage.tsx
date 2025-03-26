@@ -45,7 +45,7 @@ export const MindfulnessForSelfAwarenessTips = [
 ];
 
 
-export default function MindfulnessPage() {
+export default function MindfulnessSelfPage() {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -63,14 +63,14 @@ export default function MindfulnessPage() {
             <Text style={styles.authors}>Ref. Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>
             <View style={styles.bulletContainer}>
-              {thingsYouShouldKnow.map((item) => (
+              {MindfulnessForSelfAwarenessTips.map((item) => (
                 <Text key={item.id} style={styles.bulletPoint}>{item.text}</Text>
               ))}
             </View>
           </View>
 
           {/* Career Steps */}
-          {ResumeDatas.map((item) => (
+          {MindfulnessForSelfAwarenessData.map((item) => (
             <View key={item.id}>
               <Text style={styles.stepTitle}>{item.title}</Text>
               <Text style={styles.stepText}>{item.text}</Text>
