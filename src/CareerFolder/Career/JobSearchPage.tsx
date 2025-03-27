@@ -15,7 +15,7 @@ export default function JobSearchPage() {
         >
           {/* About Me Section */}
           <View style={styles.aboutContainer}>
-            <Image source={require('./job.png')} style={styles.profileImage} />
+            <Image source={require('./image/job.png')} style={styles.profileImage} />
             <Text style={styles.title}>How to Search the Job?</Text>
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
             <Text style={styles.sectionTitle}>Things You Should Know</Text>

@@ -18,7 +18,7 @@ export default function InterviewPage() {
         >
           {/* About Me Section */}
           <View style={styles.aboutContainer}>
-                      <Image source={require('./interview.png')} style={styles.profileImage} />
+                      <Image source={require('./image/interview.png')} style={styles.profileImage} />
 
 
             <Text style={styles.title}>How to prepare for the Interview?</Text>

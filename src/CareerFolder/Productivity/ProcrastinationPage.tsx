@@ -63,7 +63,7 @@ export default function ProcrastinationPage() {
           {/* About Me Section */}
           <View style={styles.aboutContainer}>
 
-            <Image source={require('./career.png')} style={styles.profileImage} />
+            <Image source={require('./images/pro.jpg')} style={styles.profileImage} />
             
             <Text style={styles.title}>How to Choose a Career Path?</Text>
             <Text style={styles.authors}>Co-authored by Lauren Krasny and Sophia Bell</Text>
