@@ -42,39 +42,41 @@ export default function FinanceCollection({ navigation }:MyProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#2dbabd', // Updated background color
     paddingHorizontal: 20,
     paddingVertical: 30,
   },
   header: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#ffffff', // White text for contrast
     textAlign: 'center',
     marginBottom: 30,
+    textTransform: 'uppercase',
+    letterSpacing: 1.2,
   },
   card: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    padding: 16,
-    borderRadius: 12,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 4 },
-    shadowRadius: 6,
-    elevation: 3,
+    backgroundColor: '#ffffff', // White card for contrast
+    padding: 18,
+    borderRadius: 15,
     marginBottom: 16,
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: '#1a7f74', // Darker shade of #2dbabd
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 3 },
+    shadowRadius: 8,
+    elevation: 5,
+    alignItems: 'center',
   },
   cardPressed: {
-    backgroundColor: '#e0f7fa', // Light blue on press
+    backgroundColor: '#e0f7f5', // Lighter cyan when pressed
   },
   cardText: {
-    fontSize: 18,
-    fontWeight: '500',
-    flex: 1,
-    color: '#333',
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#1a7f74', // Dark cyan text
+    textAlign: 'center',
+    letterSpacing: 1,
   },
 });
