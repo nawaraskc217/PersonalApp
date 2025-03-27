@@ -65,6 +65,8 @@ export default function StartingEntry() {
         options={{ headerShown: false }} />
 
       <Stack.Screen name="BlogsPage" component={BlogsPage} />
+
+      
       {/* //Categories of Solutions */}
       <Stack.Screen name="CareerPageCollection" component={CareerPageCollection} />
       <Stack.Screen name="ProductivityCollection" component={ProductivityCollection} />

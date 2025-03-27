@@ -30,7 +30,7 @@ function ServicesPage({ navigation }: MyProps) {
 
       {/* Categories */}
       <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Categories</Text>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginBottom: 16 }}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginBottom: 20 }}>
 
 
         <TouchableOpacity onPress={() => navigation.navigate('CareerPageCollection')} style={styles.categoryButton}>
@@ -61,7 +61,7 @@ function ServicesPage({ navigation }: MyProps) {
       </ScrollView>
 
       {/* Trending Solutions */}
-      <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Trending Solutions</Text>
+      <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 10 }}>Trending Solutions</Text>
       {TrendingSolutions.map((item) => (
         <View key={item.id} style={styles.solutionContainer}>
           <Text style={{ fontSize: 16, fontWeight: '600' }}>{item.title}</Text>
@@ -74,7 +74,7 @@ function ServicesPage({ navigation }: MyProps) {
 
 const styles = StyleSheet.create({
   categoryButton: {
-    paddingVertical: 8,
+    paddingVertical: 10,
     paddingHorizontal: 20,
     marginRight: 12,
     borderRadius: 30,
