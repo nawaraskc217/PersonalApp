@@ -50,6 +50,22 @@ import HealingPage from '../CareerFolder/selflovecare/HealingPage';
 import MindfulnessSelfPage from '../CareerFolder/selflovecare/MindfulnessSelfPage';
 import BlogsPage from './Pages/BlogsPage';
 
+import ProductionRemotelyPageT from './TrendingSolutions/ProductionRemotelyPageT';
+import FinancialHabitPageT from './TrendingSolutions/FinancialHabitPageT';
+import MentalHealthTipsPageT from './TrendingSolutions/MentalHealthTipsPageT';
+import TimeManagementPageT from './TrendingSolutions/TimeManagementPageT';
+import HealthyHabitsPageT from './TrendingSolutions/HealthyHabitsPageT';
+import WorkplaceStressPageT from './TrendingSolutions/WorkplaceStressPageT';
+import NetworkingTipsPageT from './TrendingSolutions/NetworkingTipsPageT';
+import InvestingForBeginnersPageT from './TrendingSolutions/InvestingForBeginnersPageT';
+import StayingMotivatedPageT from './TrendingSolutions/StayingMotivatedPageT';
+import SleepHabitsPageT from './TrendingSolutions/SleepHabitsPageT';
+import MindfulnessPageT from './TrendingSolutions/MindfulnessPageT';
+import OvercomingProcrastinationPageT from './TrendingSolutions/OvercomingProcrastinationPageT';
+import WorkLifeBalancePageT from './TrendingSolutions/WorkLifeBalancePageT';
+import CommunicationSkillsPageT from './TrendingSolutions/CommunicationSkillsPageT';
+import CreativityBoostPageT from './TrendingSolutions/CreativityBoostPageT';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -66,7 +82,7 @@ export default function StartingEntry() {
 
       <Stack.Screen name="BlogsPage" component={BlogsPage} />
 
-      
+
       {/* //Categories of Solutions */}
       <Stack.Screen name="CareerPageCollection" component={CareerPageCollection} />
       <Stack.Screen name="ProductivityCollection" component={ProductivityCollection} />
@@ -175,6 +191,22 @@ export default function StartingEntry() {
       <Stack.Screen name="HealingPage" component={HealingPage} options={{ title: 'Healing from Negative Self-Talk' }}
       />
 
+      {/* For trending solutions  */}
+      <Stack.Screen name="ProductionRemotelyPageT" component={ProductionRemotelyPageT} options={{ title: 'How to Stay Productive While Working Remotely?' }} />
+      <Stack.Screen name="FinancialHabitPageT" component={FinancialHabitPageT} options={{ title: 'Best Financial Habits for Young Professionals' }} />
+      <Stack.Screen name="MentalHealthTipsPageT" component={MentalHealthTipsPageT} options={{ title: 'Mental Health Tips for a Balanced Life' }} />
+      <Stack.Screen name="TimeManagementPageT" component={TimeManagementPageT} options={{ title: 'Effective Time Management for Busy Professionals' }} />
+      <Stack.Screen name="HealthyHabitsPageT" component={HealthyHabitsPageT} options={{ title: 'Building Healthy Habits for Success' }} />
+      <Stack.Screen name="WorkplaceStressPageT" component={WorkplaceStressPageT} options={{ title: 'How to Deal with Stress in the Workplace' }} />
+      <Stack.Screen name="NetworkingTipsPageT" component={NetworkingTipsPageT} options={{ title: 'Networking Tips for Career Growth' }} />
+      <Stack.Screen name="InvestingForBeginnersPageT" component={InvestingForBeginnersPageT} options={{ title: 'How to Start Investing for Beginners' }} />
+      <Stack.Screen name="CreativityBoostPageT" component={CreativityBoostPageT} options={{ title: 'Boost Your Creativity with These Techniques' }} />
+      <Stack.Screen name="CommunicationSkillsPageT" component={CommunicationSkillsPageT} options={{ title: 'How to Improve Your Communication Skills' }} />
+      <Stack.Screen name="WorkLifeBalancePageT" component={WorkLifeBalancePageT} options={{ title: 'The Importance of Work-Life Balance' }} />
+      <Stack.Screen name="OvercomingProcrastinationPageT" component={OvercomingProcrastinationPageT} options={{ title: 'Overcoming Procrastination: Tips for Getting Things Done' }} />
+      <Stack.Screen name="StayingMotivatedPageT" component={StayingMotivatedPageT} options={{ title: 'Staying Motivated During Tough Times' }} />
+      <Stack.Screen name="SleepHabitsPageT" component={SleepHabitsPageT} options={{ title: 'How to Improve Your Sleep Habits' }} />
+      <Stack.Screen name="MindfulnessPageT" component={MindfulnessPageT} options={{ title: 'The Power of Mindfulness for Mental Clarity' }} />
 
     </Stack.Navigator >
   );

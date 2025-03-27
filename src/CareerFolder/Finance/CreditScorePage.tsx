@@ -73,85 +73,105 @@ export default function CreditScorePage() {
 
       
           {CreditScoreDatas.map((item) => (
-            <View key={item.id}>
-              <Text style={styles.stepTitle}>{item.title}</Text>
-              <Text style={styles.stepText}>{item.text}</Text>
-            </View>
-          ))}
-        </ScrollView>
-      </View>
-    </SafeAreaView>
-  );
-}
-
-const styles = StyleSheet.create({
-  safeContainer: {
-    flex: 1,  // Ensures it takes full height
-    backgroundColor: 'white',
-  },
-  container: {
-    flex: 1,  // Ensures it takes full height
-    paddingHorizontal: 16,
-    paddingVertical: 24,
-  },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  headerText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  aboutContainer: {
-    marginBottom: 24,
-    alignItems: 'center',
-  },
-  profileImage: {
-    width: '100%',
-    height: 250,
-    borderRadius: 10,
-    marginBottom: 20,
-    resizeMode: 'cover',
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: '600',
-    marginBottom: 8,
-    textAlign: 'center',
-  },
-  authors: {
-    fontSize: 14,
-    color: 'gray',
-    marginBottom: 12,
-  },
-  sectionTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    marginBottom: 8,
-  },
-  bulletContainer: {
-    alignSelf: 'flex-start',
-    marginBottom: 12,
-    backgroundColor: '#b86314',
-    padding: 8,
-    borderRadius: 8,
-  },
-  bulletPoint: {
-    fontSize: 14,
-    marginBottom: 4,
-    fontWeight: '600',
-  },
-  stepTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    marginTop: 12,
-    marginBottom: 4,
-  },
-  stepText: {
-    fontSize: 14,
-    textAlign: 'justify',
-    marginBottom: 8,
-  },
-});
+           <View key={item.id} style={styles.stepContainer}>
+                        <Text style={styles.stepTitle}>{item.title}</Text>
+                        <Text style={styles.stepText}>{item.text}</Text>
+                      </View>
+                    ))}
+                  </ScrollView>
+                </View>
+              </SafeAreaView>
+            );
+          }
+          
+          
+          const styles = StyleSheet.create({
+            safeContainer: {
+              flex: 1,
+              backgroundColor: '#f7f7f7', // Light gray background
+            },
+            container: {
+              flex: 1,
+              paddingHorizontal: 20,
+              paddingVertical: 30,
+              backgroundColor: '#ffffff',
+            },
+            aboutContainer: {
+              marginBottom: 30,
+              alignItems: 'center',
+              backgroundColor: '#ffffff', // White background for the section
+              paddingVertical: 20,
+              borderRadius: 15,
+              elevation: 5, // Shadow for elevation effect
+              shadowColor: '#000', 
+              shadowOpacity: 0.1,
+              shadowOffset: { width: 0, height: 5 },
+              shadowRadius: 10,
+            },
+            profileImage: {
+              width: '100%',
+              height: 250,
+              borderRadius: 15,
+              marginBottom: 20,
+              resizeMode: 'cover',
+              borderWidth: 2,
+              borderColor: '#dcdcdc', // Soft border around image
+            },
+            title: {
+              fontSize: 22,
+              fontWeight: 'bold',
+              color: '#333333', // Dark text color
+              marginBottom: 10,
+              textAlign: 'center',
+            },
+            authors: {
+              fontSize: 16,
+              color: '#777777', // Lighter gray text color
+              marginBottom: 12,
+              textAlign: 'center',
+            },
+            sectionTitle: {
+              fontSize: 18,
+              fontWeight: 'bold',
+              marginBottom: 10,
+              color: '#b86314', // Use a warm color for emphasis
+            },
+            bulletContainer: {
+              alignSelf: 'flex-start',
+              marginBottom: 20,
+              backgroundColor: '#ffe5b4', // Light golden background
+              padding: 12,
+              borderRadius: 8,
+              width: '100%',
+            },
+            bulletPoint: {
+              fontSize: 16,
+              color: '#555555', // Darker gray text
+              marginBottom: 6,
+              fontWeight: '600',
+            },
+            stepContainer: {
+              marginBottom: 24,
+              paddingHorizontal: 20,
+              paddingVertical: 16,
+              backgroundColor: '#ffffff',
+              borderRadius: 12,
+              elevation: 3, // Subtle shadow for card effect
+              shadowColor: '#000',
+              shadowOpacity: 0.1,
+              shadowOffset: { width: 0, height: 4 },
+              shadowRadius: 8,
+            },
+            stepTitle: {
+              fontSize: 18,
+              fontWeight: 'bold',
+              color: '#333333',
+              marginBottom: 8,
+            },
+            stepText: {
+              fontSize: 16,
+              textAlign: 'justify',
+              color: '#666666',
+              lineHeight: 24,
+            },
+          });
