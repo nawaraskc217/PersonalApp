@@ -112,10 +112,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   profileImage: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
-    marginBottom: 16,
+    width: '100%',
+    height: 250,
+    borderRadius: 10,
+    marginBottom: 20,
+    resizeMode: 'cover',
   },
   title: {
     fontSize: 18,

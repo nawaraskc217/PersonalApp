@@ -14,7 +14,7 @@ export default function HomePage({ navigation }:MyProps) {
       <View style={styles.container}>
         {/* Image Section */}
         <Image
-          source={{ uri: 'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=' }}  // Replace with your own image URL
+          source={require('../assets/eye.jpg')}   // Replace with your own image URL
           style={styles.image}
         />
 
