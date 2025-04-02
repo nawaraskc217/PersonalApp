@@ -1,4 +1,9 @@
 {
   "name": "projectReact",
-  "displayName": "projectReact"
+  "displayName": "projectReact",
+  "extra": {
+    "eas": {
+      "projectId": "a8d08ced-4108-4842-92a2-689f7ca809ff"
+    }
+  }
 }
